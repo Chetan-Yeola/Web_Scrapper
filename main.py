@@ -10,6 +10,7 @@ driver.find_element_by_id("username").send_keys(username)
 driver.find_element_by_id("password").send_keys(password)
 # click login button
 driver.find_element_by_id("loginbutton").click()
+print (" ")
 # wait the ready state to be complete
 WebDriverWait(driver=driver, ).until(lambda x: x.execute_script("return document.readyState === 'complete'"))
 error_message = "Incorrect username or password."
